@@ -1,0 +1,68 @@
+<style>
+  .mode-landscape .sl-wrap { flex-direction: row; }
+  .mode-portrait .sl-wrap { flex-direction: column; }
+  .mode-landscape .sl-left { width: 58%; }
+  .mode-landscape .sl-right { width: 42%; }
+  .mode-portrait .sl-left { width: 100%; flex: 1; }
+  .mode-portrait .sl-right { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-wrap flex h-full">
+
+    <!-- Left: Problem + Solution -->
+    <div class="sl-left flex flex-col justify-center p-10 gap-7">
+
+      <!-- Problem zone -->
+      <div class="border-l-4 border-red-400 pl-5">
+        <p class="text-xs font-bold text-red-500 tracking-widest uppercase mb-2">The Problem</p>
+        <h2 class="text-2xl font-black text-slate-900 leading-tight mb-2">
+          Crores of Items.<br>Zero Earners.
+        </h2>
+        <p class="text-sm text-slate-500 leading-relaxed">
+          Indian homes own drills, cameras, projectors, and camping gear that sit unused for months at a time.
+          Meanwhile, a neighbor pays full price to buy the same thing — or simply goes without.
+          The peer-to-peer lending opportunity is largely untapped.
+        </p>
+      </div>
+
+      <!-- Divider -->
+      <div class="flex items-center gap-3">
+        <div class="flex-1 border-t border-slate-100"></div>
+        <span class="text-xs text-slate-300 font-medium">↓</span>
+        <div class="flex-1 border-t border-slate-100"></div>
+      </div>
+
+      <!-- Solution zone -->
+      <div class="border-l-4 border-amber-400 pl-5">
+        <p class="text-xs font-bold text-amber-600 tracking-widest uppercase mb-2">The Solution</p>
+        <h2 class="text-2xl font-black text-slate-900 leading-tight mb-2">
+          List It. Lend It. Earn.
+        </h2>
+        <p class="text-sm text-slate-500 leading-relaxed">
+          A hyperlocal app that turns idle household items into income for lenders and affordable access
+          for borrowers — for ₹20 to ₹100 per rental. Borrow → Use → Return. Simple.
+        </p>
+        <!-- Workflow pills -->
+        <div class="flex items-center gap-2 mt-3 flex-wrap">
+          <span class="px-2.5 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded-full">List item</span>
+          <span class="text-slate-300 text-xs">→</span>
+          <span class="px-2.5 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded-full">Borrow nearby</span>
+          <span class="text-slate-300 text-xs">→</span>
+          <span class="px-2.5 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded-full">Return &amp; rate</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-right relative overflow-hidden bg-amber-50">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=friendly%20Indian%20neighbor%20handing%20power%20drill%20to%20another%20person%20at%20apartment%20door%20warm%20interaction%20urban%20India%20modern%20apartment%20building%20natural%20daylight%20candid%20warm%20tones"
+        alt="Neighbor lending an item"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>

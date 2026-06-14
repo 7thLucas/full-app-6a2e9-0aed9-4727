@@ -1,0 +1,78 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10 gap-5">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between">
+      <div>
+        <p class="text-xs font-bold text-slate-400 tracking-widest uppercase mb-1">North Star Metric</p>
+        <h2 class="text-2xl font-black text-slate-900">Weekly Rentals Completed</h2>
+        <p class="text-sm text-slate-500 mt-1">An item booked, picked up, used, and returned — the one number this app lives by.</p>
+      </div>
+      <span class="flex-shrink-0 px-3 py-1 bg-slate-100 text-slate-500 text-xs font-semibold rounded-full">
+        Projected — based on your inputs
+      </span>
+    </div>
+
+    <!-- Formula block -->
+    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+      <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">WVO Formula</p>
+      <div class="flex items-center gap-3 flex-wrap">
+
+        <div class="flex flex-col items-center gap-1">
+          <span class="px-4 py-2 bg-amber-100 text-amber-900 rounded-xl font-black text-sm">200 lenders</span>
+          <span class="text-xs text-amber-600 font-medium">Assumption — adjust this</span>
+        </div>
+
+        <span class="text-slate-400 font-bold text-lg">×</span>
+
+        <div class="flex flex-col items-center gap-1">
+          <span class="px-4 py-2 bg-amber-100 text-amber-900 rounded-xl font-black text-sm">2 rentals / lender / wk</span>
+          <span class="text-xs text-amber-600 font-medium">Assumption — adjust this</span>
+        </div>
+
+        <span class="text-slate-400 font-bold text-lg">=</span>
+
+        <div class="flex flex-col items-center gap-1">
+          <span class="px-5 py-2 bg-amber-500 text-white rounded-xl font-black text-base shadow-sm">400 rentals / week</span>
+          <span class="text-xs text-slate-500">Weekly Verified Operations</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Value derivation: 2 cards -->
+    <div class="grid grid-cols-2 gap-4">
+
+      <!-- Platform revenue -->
+      <div class="bg-slate-900 rounded-2xl p-5 text-white">
+        <p class="text-xs font-bold opacity-50 uppercase tracking-widest mb-3">Platform Revenue</p>
+        <p class="text-3xl font-black leading-none mb-1">₹1,87,200</p>
+        <p class="text-xs opacity-50 mb-3">per year</p>
+        <p class="text-xs opacity-60 leading-relaxed">
+          400 ops/wk × ₹60 avg fee × 15% commission × 52 wks
+        </p>
+        <div class="mt-2">
+          <span class="px-2 py-0.5 bg-white bg-opacity-10 text-white text-xs rounded-full">₹60 avg = midpoint of ₹20–₹100</span>
+        </div>
+        <div class="mt-1">
+          <span class="px-2 py-0.5 bg-amber-400 bg-opacity-20 text-amber-200 text-xs rounded-full">15% commission — assumption</span>
+        </div>
+      </div>
+
+      <!-- Lender earnings -->
+      <div class="bg-amber-50 border border-amber-100 rounded-2xl p-5">
+        <p class="text-xs font-bold text-amber-700 uppercase tracking-widest mb-3">Collective Lender Earnings</p>
+        <p class="text-3xl font-black text-slate-900 leading-none mb-1">₹10,60,800</p>
+        <p class="text-xs text-slate-400 mb-3">per year, across all lenders</p>
+        <p class="text-xs text-slate-500 leading-relaxed">
+          400 ops/wk × ₹60 avg fee × 85% lender share × 52 wks
+        </p>
+        <div class="mt-2">
+          <span class="px-2 py-0.5 bg-amber-100 text-amber-700 text-xs rounded-full">Avg ₹5,304 per lender / year</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

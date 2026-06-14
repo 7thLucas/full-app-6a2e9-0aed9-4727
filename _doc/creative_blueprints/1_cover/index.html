@@ -1,0 +1,60 @@
+<style>
+  .mode-landscape .sl-wrap { flex-direction: row; }
+  .mode-portrait .sl-wrap { flex-direction: column; }
+  .mode-landscape .sl-left { width: 55%; }
+  .mode-landscape .sl-right { width: 45%; }
+  .mode-portrait .sl-left { width: 100%; flex: 1; }
+  .mode-portrait .sl-right { width: 100%; height: 38%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-wrap flex h-full">
+
+    <!-- Left: content column -->
+    <div class="sl-left flex flex-col justify-between p-10 bg-white">
+
+      <div class="space-y-5">
+        <span class="inline-block px-3 py-1 bg-amber-100 text-amber-700 text-xs font-bold rounded-full tracking-widest uppercase">
+          India's Sharing Economy
+        </span>
+
+        <h1 class="text-4xl font-black text-slate-900 leading-tight">
+          Why Buy When<br>
+          <span class="text-amber-500">You Can Borrow?</span>
+        </h1>
+
+        <p class="text-sm text-slate-500 leading-relaxed max-w-xs">
+          A hyperlocal marketplace where Indian households rent idle items to each other — for ₹20 to ₹100 per use.
+        </p>
+
+        <!-- Item pill strip -->
+        <div class="flex flex-wrap gap-2 pt-1">
+          <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-full">🔧 Drill</span>
+          <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-full">📷 DSLR</span>
+          <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-full">📽 Projector</span>
+          <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-full">⛺ Tent</span>
+          <span class="px-2.5 py-1 bg-amber-100 text-amber-700 text-xs rounded-full font-medium">+ more nearby</span>
+        </div>
+      </div>
+
+      <div class="space-y-1">
+        <p class="text-xl font-black text-slate-900 tracking-tight">Borrow Anything<span class="text-amber-500">.</span></p>
+        <p class="text-xs text-slate-400">Airbnb for household items</p>
+        <data-attribution />
+      </div>
+
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-right relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=flat%20lay%20overhead%20shot%20of%20household%20items%20drill%20machine%20DSLR%20camera%20projector%20camping%20tent%20bike%20pump%20power%20bank%20arranged%20neatly%20on%20warm%20wooden%20surface%20earthy%20tones%20India%20home%20natural%20light%20editorial%20photography"
+        alt="Household items available to borrow nearby"
+        class="w-full h-full object-cover"
+      />
+      <!-- Subtle overlay for polish -->
+      <div class="absolute inset-0 bg-gradient-to-l from-transparent to-white opacity-10"></div>
+    </div>
+
+  </div>
+</section>
